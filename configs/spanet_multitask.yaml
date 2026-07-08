@@ -1,0 +1,7 @@
+# Deprecated placeholder kept only to avoid breaking old references.
+#
+# Native SPANET uses:
+#   - configs/ttbar_dilep_event.yaml for event topology and HDF5 schema
+#   - configs/ttbar_dilep_options.json for training options
+#
+# Do not pass this file to SPANET.

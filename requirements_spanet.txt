@@ -1,0 +1,23 @@
+# SPANET 2.1.1 training stack.
+#
+# Install PyTorch separately with conda so the CUDA runtime is controlled:
+#   conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 "mkl<2024.1" -c pytorch -c conda-forge -y
+#
+# Keep this file conservative. Do not add uproot/awkward/vector here; those
+# belong in requirements_convert.txt so they do not disturb SPANET or coffea.
+spanet==2.1.1
+numpy==1.23.5
+h5py>=3.7,<4
+numba>=0.55,<0.61
+pytorch-lightning==1.9.5
+torchmetrics==0.11.4
+scikit-learn>=1.1,<1.6
+sympy>=1.11,<1.14
+opt-einsum>=3.3,<4
+pyyaml>=6,<7
+tqdm>=4.65,<5
+matplotlib>=3.7,<3.10
+seaborn>=0.12,<0.14
+tensorboard>=2.12,<2.21
+pyparsing>=2.3.1
+setuptools<81

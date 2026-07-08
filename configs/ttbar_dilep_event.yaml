@@ -1,0 +1,64 @@
+INPUTS:
+  SEQUENTIAL:
+    Jets:
+      pt: log_normalize
+      eta: normalize
+      sin_phi: normalize
+      cos_phi: normalize
+      mass: log_normalize
+  GLOBAL:
+    Leptons:
+      e_pt: log_normalize
+      e_eta: normalize
+      e_sin_phi: normalize
+      e_cos_phi: normalize
+      e_mass: log_normalize
+      e_charge: none
+      mu_pt: log_normalize
+      mu_eta: normalize
+      mu_sin_phi: normalize
+      mu_cos_phi: normalize
+      mu_mass: log_normalize
+      mu_charge: none
+    Met:
+      met: log_normalize
+      sin_phi: normalize
+      cos_phi: normalize
+    Event:
+      reserved: none
+      dphi_emu: normalize
+      dr_emu: normalize
+      dphi_jj: normalize
+      dr_jj: normalize
+      m_jj: log_normalize
+      m_ej_min: log_normalize
+      m_muj_min: log_normalize
+
+EVENT:
+  TopE:
+    - b: Jets
+  TopMu:
+    - b: Jets
+
+PERMUTATIONS: {}
+
+REGRESSIONS:
+  EVENT:
+    - nu_px
+    - nu_py
+    - nu_pz
+    - nubar_px
+    - nubar_py
+    - nubar_pz
+    - top_px
+    - top_py
+    - top_pz
+    - top_e
+    - tbar_px
+    - tbar_py
+    - tbar_pz
+    - tbar_e
+
+CLASSIFICATIONS:
+  EVENT:
+    - reco_quality

@@ -1,0 +1,17 @@
+# Optional converter stack for environments that already use coffea 0.7.x.
+# Use this instead of requirements_convert.txt when you must preserve:
+#   awkward<2, uproot==4.*, vector==0.11.0, numpy==1.23.5
+numpy==1.23.5
+pandas>=1.5,<2.3
+scipy>=1.9,<1.14
+scikit-learn>=1.1,<1.6
+h5py>=3.7,<4
+uproot!=4.2.4,!=4.3.0,!=4.3.1,>=4.1.6,<5
+awkward>=1.5.1,<2
+vector==0.11.0
+matplotlib>=3.6,<3.10
+seaborn>=0.12,<0.14
+pyyaml>=6.0,<7
+tqdm>=4.65,<5
+pyparsing>=2.3.1
+threadpoolctl>=3.1,<4

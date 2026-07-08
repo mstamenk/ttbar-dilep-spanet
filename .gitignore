@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local external checkout; install SPANET through the environment instead.
+SPANet/
+
+# Large generated analysis products should live in scratch.
+*.root
+*.h5
+*.hdf5
+*.npz
+plots/
+logs/
+eval/
+root/
+hdf5/
